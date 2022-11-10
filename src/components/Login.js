@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import { AuthContext } from '../contexts/UserContext';
 
- 
 const Login = () => {
 
 const {signIn} = useContext(AuthContext);
@@ -24,8 +23,8 @@ const handleSubmit = event => {
 
 }
 
-    return (
-        <div className="hero min-h-screen bg-base-200" class="col-span-5 border-2">
+return (
+  <div className="hero min-h-screen bg-base-200" class="col-span-5 border-2">
   <div className="hero-content flex-col">
     <div className="text-center lg:text-left">
       <h1 className="text-5xl font-bold">Please Login now!</h1>
