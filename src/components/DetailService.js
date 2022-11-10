@@ -54,17 +54,13 @@ const DetailService = () => {
     return (
         <div>
             <h1 class="text-2xl">Detail about {detail.name}</h1>
-
             <div className="card">
-  <figure><img src={detail.pic} alt={detail.name} /></figure>
-  <div className="card-body gap-4">
-    <p>Price: {detail.price}</p>
-    <p>Description: {detail.detail}</p>
-  </div>
-</div>
-
-
-
+                <figure><img src={detail.pic} alt={detail.name} /></figure>
+            <div className="card-body gap-4">
+                <p>Price: {detail.price}</p>
+                 <p>Description: {detail.detail}</p>
+            </div>
+        </div>
             <br /><br />
             <h1 class="text-lg">Reviwe Section</h1>
             <br /><br />
