@@ -5,8 +5,6 @@ import banner from '../easyBanner.jpg'
 import Service from './Service';
 
 
-
-
 const Home = () => {
     const services = useLoaderData({});
     const {user} = useContext(AuthContext);
