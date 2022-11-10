@@ -11,11 +11,7 @@ const DetailService = () => {
     const [review, setReview] = useState({});
     //const [seeReview, setSeeReview] = useState([]);
 
-    
     //console.log(review);
-
-   
-    
 
     const handleAddReview = event => {
 
@@ -66,8 +62,6 @@ const DetailService = () => {
             <br /><br />
             <h1>Show all reviews about this service</h1>
             <Link className="btn btn-ghost normal-case text-xl" to='/myreviews'>See Review</Link>
-            
-            
             <br />
             <h1>Add your review </h1>
             <br />
