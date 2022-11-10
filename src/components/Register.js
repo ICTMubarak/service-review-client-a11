@@ -1,12 +1,9 @@
 import React, { useContext } from 'react';
 import { AuthContext } from '../contexts/UserContext';
-
-   
     
     const Register = () => {
       const {createUser, signInWithGoogle} = useContext(AuthContext);
       
-
       const handleSubmit = event =>{
         event.preventDefault();
 
