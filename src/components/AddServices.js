@@ -10,7 +10,6 @@ const AddServices = () => {
                 'content-type': 'application/json'
             },
             body:JSON.stringify(service)
-
         })
         .then(res => res.json())
         .then(data => {
@@ -24,7 +23,6 @@ const AddServices = () => {
     }
 
     const handleInputBlur = event =>{
-
         const value = event.target.value;
         const field = event.target.name;
         const newSrvice = {...service}
