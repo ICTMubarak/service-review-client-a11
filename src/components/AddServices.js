@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 
 const AddServices = () => {
-
-
     const [service, setService] = useState({});
     const handleAddService = event =>{
         event.preventDefault();
@@ -24,9 +22,6 @@ const AddServices = () => {
         })
 
     }
-
-
-
 
     const handleInputBlur = event =>{
 
