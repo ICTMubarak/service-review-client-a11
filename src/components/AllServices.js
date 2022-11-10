@@ -7,7 +7,7 @@ const AllServices = () => {
     return (
         <div>
             <h1>All services</h1>
-            <div class="grid grid-cols-1 gap-2 border-4 gap-4 md:grid-cols-3">
+            <div  class="grid grid-cols-1 gap-2 border-4 gap-4 md:grid-cols-3">
             {
                 services.map(service => <Service key={service._id} service={service}></Service>)
             }
