@@ -23,7 +23,7 @@ const UserContext = ({children}) => {
     }
 
     const logOut = () =>{
-        return signOut(auth);
+         return signOut(auth);
     }
 
     useEffect(()=>{
