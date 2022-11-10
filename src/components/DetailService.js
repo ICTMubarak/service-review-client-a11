@@ -9,32 +9,18 @@ const DetailService = () => {
     //console.log(user);
     
     const [review, setReview] = useState({});
-    
+    //const [seeReview, setSeeReview] = useState([]);
+
     
     //console.log(review);
 
-     const seeReview = async event =>{
-        event.preventDefault();
-       await fetch('http://localhost:5000/reviewsLoad', {
-            method: 'GET',
-            headers: {
-                'content-type': 'application/json'
-            }
-        })
-        .then(res => res.json())
-        .then(data => {
-            console.log(data);
-        })
-        
-    }
-console.log('rev=', seeReview);
-
-
+   
+    
 
     const handleAddReview = event => {
 
         event.preventDefault();
-        fetch('http://localhost:5000/addreview', {
+        fetch('https://easy-services-server.vercel.app/addreview', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -83,13 +69,12 @@ console.log('rev=', seeReview);
             <h1 class="text-lg">Reviwe Section</h1>
             <br /><br />
             <h1>Show all reviews about this service</h1>
-            <Link className="btn btn-ghost normal-case text-xl" to='/myreviews'>Blog</Link>
-            <button onClick={seeReview}>rev</button>
-            <h1>rev = {seeReview.length}</h1>
+            <Link className="btn btn-ghost normal-case text-xl" to='/myreviews'>See Review</Link>
+            
             
             <br />
             <h1>Add your review </h1>
-            <br /><br />
+            <br />
 
             <form onSubmit={handleAddReview}>
                     <input onBlur={handleInputBlur} type="text" name="reviewFild" placeholder='Write your Review' />

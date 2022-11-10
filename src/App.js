@@ -23,7 +23,7 @@ function App() {
         {
           path: '/',
           element: <Home></Home>,
-          loader: ()  => fetch('http://localhost:5000/servicesLoad')
+          loader: ()  => fetch('https://easy-services-server.vercel.app/servicesLoad')
         },
         {
           path: '/addservices',
@@ -32,18 +32,23 @@ function App() {
         {
           path: '/myreviews',
           element: <MyReviews></MyReviews>,
-          loader: ()  => fetch('http://localhost:5000/reviewsLoad')
+          loader: ()  => fetch('https://easy-services-server.vercel.app/reviewsLoad')
+        },
+        {
+          path: '/reviews',
+          element: <MyReviews></MyReviews>,
+          loader: ()  => fetch('https://easy-services-server.vercel.app/reviewsLoad')
         },
         {
           path: '/allservices',
           element: <AllServices></AllServices>,
-          loader: ()  => fetch('http://localhost:5000/servicesLoad')
+          loader: ()  => fetch('https://easy-services-server.vercel.app/servicesLoad')
         },
         {
           path: '/detailservice/:id',
           element: <DetailService></DetailService>,
-          loader: ({params}) => fetch(`http://localhost:5000/detailservice/${params.id}`)
-          //loader: ()  => fetch('http://localhost:5000/reviewsLoad')
+          loader: ({params}) => fetch(`https://easy-services-server.vercel.app/detailservice/${params.id}`)
+          //loader: ()  => fetch('https://easy-services-server.vercel.app/reviewsLoad')
         },
         {
           path: '/login',
@@ -64,6 +69,7 @@ function App() {
 
   return (
     <div className="App">
+     
      
       <RouterProvider router={router}></RouterProvider>
 

@@ -6,7 +6,7 @@ const AddServices = () => {
     const [service, setService] = useState({});
     const handleAddService = event =>{
         event.preventDefault();
-        fetch('http://localhost:5000/addservices', {
+        fetch('https://easy-services-server.vercel.app/addservices', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
