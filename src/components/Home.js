@@ -14,7 +14,7 @@ const Home = () => {
     
     return (
         <div>
-            <img src={banner} alt="Banner" />
+             <img src={banner} alt="Banner" />
             <div class="grid grid-cols-1 gap-2 border-4 gap-4 md:grid-cols-3">
             {
                 threeService.map(service => <Service key={service._id} service={service}></Service>)
