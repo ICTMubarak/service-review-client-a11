@@ -19,8 +19,8 @@ const Home = () => {
             }
             </div>
             <Link className="btn btn-ghost normal-case text-xl" to='/allservices'>See All</Link>
-<br /><br />
-            <div class="flex">
+            <br /><br />
+          <div class="flex">
             <section class="flex-1">
              <div className="card card-compact w-96 bg-base-100 shadow-xl">
                <div className="card-body">
@@ -44,10 +44,8 @@ const Home = () => {
                </div>
              </div>
             </section>
-
-            </div>
+          </div>
             <br /><br />
-            
         </div>
     );
 };
