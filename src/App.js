@@ -14,7 +14,6 @@ import MyReviews from './components/MyReviews';
 function App() {
 
   const router = createBrowserRouter([
-
     {
       path: '/',
       element: <Main></Main>,
@@ -69,7 +68,6 @@ function App() {
   return (
     <div className="App">
      
-
       <RouterProvider router={router}></RouterProvider>
 
     </div>

@@ -10,8 +10,6 @@ const Header = () => {
         .then(()=>{ })
         .catch(error => console.log(error));
     }
-
-
     return (
         <div>
              <div className="navbar bg-neutral text-neutral-content">
